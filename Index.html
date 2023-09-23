@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    
+    #password {
+      margin-bottom: 10px;
+      width: 100px; /* Adjust the width as desired */
+      box-sizing: border-box;
+      text-align:center;
+    }
+    
+    .button-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      flex: 1;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+    <input type="text" id="password" readonly>
+    <div class="button-row">
+      <button onclick="generate3DigitPassword()">3-Digit</button>
+      <button onclick="generate4DigitPassword()">4-Digit</button>
+      <button onclick="clearPassword()">Clear</button>
+    </div>
+  </div>
+
+  <script>
+    function generate3DigitPassword() {
+      var password = Math.floor(100 + Math.random() * 900);
+      document.getElementById("password").value = password;
+    }
+    
+    function generate4DigitPassword() {
+      var password = Math.floor(1000 + Math.random() * 9000);
+      document.getElementById("password").value = password;
+    }
+    
+    function clearPassword() {
+      document.getElementById("password").value = "";
+    }
+  </script>
+</body>
+</html>
