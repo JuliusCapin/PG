@@ -12,8 +12,9 @@
     margin:0;
   }
   .a{
-    background-color:yellow;
+    background-color:orange;
     text-align:right;
+    height:23px;
   }
   
   h3{
@@ -38,8 +39,9 @@ text-align: center;
    position:relative;
   }
   .s{
-    color:blue;
-    border: 2px solid blue;
+    color:white;
+    border:none;
+    background:#4C71E3ff;
     height:19px;
     width:230px;
     position:absolute;
@@ -50,9 +52,10 @@ text-align: center;
     margin-left:63px;
     font-weight: bold;
     font-size: 17px;
+    border-radius: 15px;
   }
   .p{
-    text-align: center;
+   text-align: center;
    visibility:hidden;
    
   }
@@ -70,14 +73,16 @@ text-align: center;
   height:32px;
   left:100px;
   box-sizing: border-box;
-  border: 1px solid grey;
-  border-radius: 4px;
+  
+  
   margin-left: 1px;
   margin-left:10px;
   position: absolute;
   top:380px;
   font-weight:bold;
   font-size: 17px;
+  border:none;
+  border-bottom: 0.5px solid blue;
 }
 .uu{
   margin-left:110px;
@@ -89,13 +94,16 @@ input[type=password].k{
   height:32px;
   left:100px;
   box-sizing: border-box;
-  border: 1px solid grey;
-  border-radius: 4px;
   margin-left: 1px;
   margin-left:10px;
   position: absolute;
   top:440px;
   font-weight: bold;
+  border:none;
+  border-bottom:0.5px solid blue;
+}
+input[type="password"]:focus{
+  outline:none;
 }
 .n{
   position: absolute ;
@@ -131,7 +139,7 @@ img{
 
 </style>
 <body>
-<p class="a">SIAS Online 3.3.17.11(sias_goa)</p>
+<p class="a">SIAS Online 3.4.11.1(sias_goa)</p>
 
 <div class="d" id="d">
   <div id ="p">
